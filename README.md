@@ -30,7 +30,7 @@ The following grammar is used to build the parsed tree :
 <start_block> ::= (
 <end_block> ::= )
 <not> ::= !
-<and> ::= \&\&
+<and> ::= &&
 <or> ::= ||
 ```
 
