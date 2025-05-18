@@ -18,19 +18,21 @@ flowchart TD
 
 The following grammar is used to build the parsed tree :
 
-$$<expression> ::= <variable> | <operation> | <block>$$
-$$<block> ::= <start\_block> <expression> <end_block>$$
-$$<operation> ::= <monadic> | <duadic>$$
-$$<monadic> ::= <monadic\_operator> <expression>$$
-$$<duadic> ::= <expression> <duadic\_operator> <expression>$$
-$$<variable> ::= /[A-Za-z][A-Za-z0-9]\^/$$
-$$<monadic\_operator> ::= <not>$$
-$$<duadic\_operator> ::= <and> | <or>$$
-$$<start_block> ::= ($$
-$$<end_block> ::= )$$
-$$<not> ::= !$$
-$$<and> ::= \&\&$$
-$$<or> ::= ||$$
+```
+<expression> ::= <variable> | <operation> | <block>
+<block> ::= <start_block> <expression> <end_block>
+<operation> ::= <monadic> | <duadic>
+<monadic> ::= <monadic_operator> <expression>
+<duadic> ::= <expression> <duadic_operator> <expression>
+<variable> ::= /[A-Za-z][A-Za-z0-9]^/
+<monadic_operator> ::= <not>
+<duadic_operator> ::= <and> | <or>
+<start_block> ::= (
+<end_block> ::= )
+<not> ::= !
+<and> ::= \&\&
+<or> ::= ||
+```
 
 ## Notes
 You need to download the p5js min file in order to make it work, when downloaded place the file in `./render/libraries/`
